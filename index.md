@@ -3,7 +3,7 @@ tab: none
 layout: page
 ---
 
-De vez en cuando, me encuentro en los medios de comunicación ante cuestiones que me resisto a estar callado.
+De vez en cuando me encuentro con asuntos de prensa que quiero hacer notar.
 
 Este sitio es una reunión de esos comentarios, más o menos ocasionales.
 
