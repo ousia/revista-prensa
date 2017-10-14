@@ -13,7 +13,7 @@ Aquí está la lista:
   {% for page in site.pages %}
     {% if page.resource == true %}
       {% for pc in page.categories %}
-        {% if pc == cat %}
+        {% if my_page.tab == "none" %}
           <li><a href="{{ page.url }}">{{ page.title }}</a></li>
         {% endif %}   <!-- cat-match-p -->
       {% endfor %}  <!-- page-category -->
