@@ -35,13 +35,7 @@ Aquí está la lista:
   {% for path in page_paths %}
     {% assign my_page = site.pages | where: "path", path | first %} <!-- assign mp -->
     {% if my_page.tab == "none" %}
-        {% comment %}
-        {% if my_page.title %}
-        {% endcomment %}
         <li><p><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.label | default: my_page.title }}</a></p></li>
-        {% comment %}
-        {% endif %} <!-- page -->
-        {% endcomment %}
     {% endif %} <!-- no-tab -->
   {% endfor %} <!-- page-paths -->
 </ul>
