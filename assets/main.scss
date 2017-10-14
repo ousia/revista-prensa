@@ -78,9 +78,7 @@ code {
     }
 
   @include media-query($on-palm) {
-    .menu-icon {
-      margin-top: 10px;
-      }
+      margin-top: 0px;
     }
 }
 
