@@ -24,9 +24,7 @@ Aquí está la lista:
 <ul>
   {% for page in site.pages %}
     {% if my_page.tab == "none" %}
-        {% if my_page.title %}
             <li><p><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.label | default: my_page.title }}</a></p></li>
-        {% endif %} <!-- page -->
     {% endif %} <!-- no-tab -->
   {% endfor %} <!-- page-paths -->
 </ul>
@@ -35,7 +33,9 @@ Aquí está la lista:
   {% for path in page_paths %}
     {% assign my_page = site.pages | where: "path", path | first %} <!-- assign mp -->
     {% if my_page.tab == "none" %}
+        {% if my_page.title %}
         <li><p><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.label | default: my_page.title }}</a></p></li>
+        {% endif %} <!-- page -->
     {% endif %} <!-- no-tab -->
   {% endfor %} <!-- page-paths -->
 </ul>
