@@ -76,5 +76,11 @@ code {
       }
       margin-left: 20px;
     }
+
+  @include media-query($on-palm) {
+    .menu-icon {
+      margin-top: 10px;
+      }
+    }
 }
 
