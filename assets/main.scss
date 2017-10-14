@@ -25,9 +25,13 @@ code {
   margin-bottom: $spacing-unit / 4;
 } */
 
-.site-nav {
-  padding-left: 80%;
+.wrapper {
+  .site-title {
+      padding-right: 80%;
+  }
+}
 
+.site-nav {
   .page-link {
      padding: 50 10px;
   }
