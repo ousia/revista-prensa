@@ -17,10 +17,8 @@ Aquí está la lista:
     {% assign my_page = site.pages | where: "path", path | first %}
     {% if my_page.tab == "none" %}
         {% if my_page.title != "Nada" %}
-            {% if my_page.permalink != "/404.html" %}
-                {% if my_page.path != "404.md" %}
-* [{{ my_page.label | default: my_page.title }}]({{ my_page.url | relative_url }}) (test: {{ my_page.path }})
-                {% endif %}
+            {% if my_page.path != "index.md" %}
+* [{{ my_page.label | default: my_page.title }}]({{ my_page.url | relative_url }})
             {% endif %}
         {% endif %}
     {% endif %}
