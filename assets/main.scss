@@ -27,11 +27,6 @@ code {
 
 
 
-  }
-}
-
-
-
 /**
  * Wrapper
  */
@@ -43,11 +38,5 @@ code {
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} *2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} *2));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
 }
+
