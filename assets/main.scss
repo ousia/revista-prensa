@@ -26,6 +26,10 @@ code {
 } */
 
 .site-nav {
+  float: right;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  @include media-query($on-palm) {
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
@@ -77,5 +81,5 @@ code {
       margin-left: 20px;
     }
   }
-
+}
 
