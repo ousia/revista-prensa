@@ -25,13 +25,7 @@ code {
   margin-bottom: $spacing-unit / 4;
 } */
 
-    .page-link {
-      display: block;
-      padding: 5000px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
+.site-nav {
+  .page-link {
+     padding: 5000px 10px;
+}
