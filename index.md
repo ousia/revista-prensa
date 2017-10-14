@@ -19,7 +19,7 @@ Aquí está la lista:
         {% if my_page.title != "Nada" %}
             {% if my_page.permalink != "/404.html" %}
                 {% if my_page.path != "404.md" %}
-* [{{ my_page.label | default: my_page.title }}]({{ my_page.url | relative_url }}) (test: {% my_page.path %})
+* [{{ my_page.label | default: my_page.title }}]({{ my_page.url | relative_url }}) (test: {{% my_page.path %}})
                 {% endif %}
             {% endif %}
         {% endif %}
