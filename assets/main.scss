@@ -28,7 +28,7 @@ code {
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
-    top: 9px;
+    padding-top: 9px;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
@@ -76,10 +76,5 @@ code {
       }
       margin-left: 20px;
     }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    right: $spacing-unit / 2;
-  }
 }
 
