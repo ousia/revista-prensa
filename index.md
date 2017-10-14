@@ -17,7 +17,7 @@ Aquí está la lista:
     {% assign my_page = site.pages | where: "path", path | first %}
     {% if my_page.tab == "none" %}
         {% if my_page.title != "Nada" %}
-            * <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.label | default: my_page.title }}</a>
+* <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.label | default: my_page.title }}</a>
         {% endif %}
     {% endif %}
   {% endfor %}
