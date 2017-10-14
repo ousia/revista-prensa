@@ -16,11 +16,9 @@ Aquí está la lista:
   {% for path in page_paths %}
     {% assign my_page = site.pages | where: "path", path | first %}
     {% if my_page.tab == "none" %}
-        {% if my_page.title != "Nada" %}
             {% if my_page.permalink != "/404.html" %}
 * [{{ my_page.label | default: my_page.title }}]({{ my_page.url | relative_url }})
             {% endif %}
-        {% endif %}
     {% endif %}
   {% endfor %}
 {% endif %}
