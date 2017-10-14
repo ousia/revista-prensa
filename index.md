@@ -39,3 +39,20 @@ Aquí está la lista:
     {% endif %} <!-- no-tab -->
   {% endfor %} <!-- page-paths -->
 </ul>
+
+
+{% assign default_paths = site.pages | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
+
+{% if page_paths %}
+<ul>
+      {% for path in page_paths %}
+        {% assign my_page = site.pages | where: "path", path | first %}
+        {% if my_page.tab == "none" %}
+            {% if my_page.title %}
+                <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.label | default: my_page.title }}</a></li>
+            {% endif %}
+        {% endif %}
+      {% endfor %}
+</ul>
+{% endif %}
