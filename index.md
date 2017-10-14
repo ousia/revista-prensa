@@ -49,7 +49,7 @@ Aquí está la lista:
       {% for path in page_paths %}
         {% assign my_page = site.pages | where: "path", path | first %}
         {% if my_page.tab == "none" %}
-            {% if my_page.title %}
+            {% if my_page.title != "Nada" %}
                 <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.label | default: my_page.title }}</a></li>
             {% endif %}
         {% endif %}
